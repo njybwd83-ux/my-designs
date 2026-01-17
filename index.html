@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الفنون الرقمية</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-palette"></i> معرض الفنون
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="fas fa-home"></i> الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">
+                                <i class="fas fa-images"></i> المعرض
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <i class="fas fa-info-circle"></i> من نحن
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-cogs"></i> الخدمات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <i class="fas fa-envelope"></i> اتصل بنا
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero-slider">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide-content slide1">
+                        <div class="container">
+                            <h1>مرحباً بك في معرض الفنون الرقمية</h1>
+                            <p>اكتشف عالماً من الإبداع والجمال</p>
+                            <button class="btn btn-light btn-lg" onclick="showModal()">
+                                <i class="fas fa-play"></i> ابدأ الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-content slide2">
+                        <div class="container">
+                            <h1>فن رقمي حديث</h1>
+                            <p>تصاميم احترافية وإبداعية</p>
+                            <button class="btn btn-light btn-lg" onclick="showModal()">
+                                <i class="fas fa-eye"></i> استكشف المزيد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-content slide3">
+                        <div class="container">
+                            <h1>انضم إلى مجتمعنا</h1>
+                            <p>شارك إبداعاتك مع العالم</p>
+                            <button class="btn btn-light btn-lg" onclick="showModal()">
+                                <i class="fas fa-users"></i> انضم الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <!-- Main Article -->
+                <article class="col-lg-8">
+                    <div class="content-box">
+                        <h2><i class="fas fa-star"></i> أحدث الأعمال الفنية</h2>
+                        <p>نقدم لكم مجموعة متميزة من الأعمال الفنية الرقمية التي تجمع بين الإبداع والتقنية الحديثة.</p>
+                        
+                        <div class="row g-4 mt-3">
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <i class="fas fa-brush fa-3x"></i>
+                                    <h3>رسومات رقمية</h3>
+                                    <p>أعمال فنية مبتكرة باستخدام أحدث أدوات الرسم الرقمي</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <i class="fas fa-camera fa-3x"></i>
+                                    <h3>تصوير احترافي</h3>
+                                    <p>صور فوتوغرافية عالية الجودة تحكي قصصاً مذهلة</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <i class="fas fa-video fa-3x"></i>
+                                    <h3>فيديو وموشن</h3>
+                                    <p>محتوى بصري متحرك يجذب الأنظار</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <i class="fas fa-pencil-ruler fa-3x"></i>
+                                    <h3>تصميم جرافيك</h3>
+                                    <p>تصاميم عصرية لجميع احتياجاتك الإبداعية</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-striped mt-5">
+                            <thead>
+                                <tr>
+                                    <th>نوع الخدمة</th>
+                                    <th>المدة</th>
+                                    <th>التقييم</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>تصميم شعارات</td>
+                                    <td>3-5 أيام</td>
+                                    <td><i class="fas fa-star text-warning"></i> 4.8/5</td>
+                                </tr>
+                                <tr>
+                                    <td>رسم رقمي</td>
+                                    <td>5-7 أيام</td>
+                                    <td><i class="fas fa-star text-warning"></i> 4.9/5</td>
+                                </tr>
+                                <tr>
+                                    <td>تصوير فوتوغرافي</td>
+                                    <td>1-2 أيام</td>
+                                    <td><i class="fas fa-star text-warning"></i> 4.7/5</td>
+                                </tr>
+                                <tr>
+                                    <td>مونتاج فيديو</td>
+                                    <td>7-10 أيام</td>
+                                    <td><i class="fas fa-star text-warning"></i> 4.6/5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Sidebar -->
+                <aside class="col-lg-4">
+                    <div class="sidebar-box">
+                        <h3><i class="fas fa-fire"></i> الأكثر شعبية</h3>
+                        <ul class="popular-list">
+                            <li><i class="fas fa-chevron-left"></i> دليل المبتدئين للفن الرقمي</li>
+                            <li><i class="fas fa-chevron-left"></i> أفضل أدوات التصميم 2024</li>
+                            <li><i class="fas fa-chevron-left"></i> كيف تبدأ مشروعك الإبداعي</li>
+                            <li><i class="fas fa-chevron-left"></i> نصائح للمصورين المحترفين</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box mt-4">
+                        <h3><i class="fas fa-bell"></i> إشعارات</h3>
+                        <button class="btn btn-primary w-100 mb-2" onclick="showToastTop()">
+                            <i class="fas fa-arrow-up"></i> إشعار علوي
+                        </button>
+                        <button class="btn btn-success w-100" onclick="showToastBottom()">
+                            <i class="fas fa-arrow-down"></i> إشعار سفلي
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><i class="fas fa-palette"></i> معرض الفنون</h4>
+                    <p>منصتك الأولى للفن الرقمي والإبداع في العالم العربي</p>
+                </div>
+                <div class="col-md-4">
+                    <h4><i class="fas fa-link"></i> روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="gallery.html">المعرض</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4><i class="fas fa-share-alt"></i> تواصل معنا</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top">
+                <p>&copy; 2024 معرض الفنون الرقمية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-gift"></i> مرحباً بك!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>شكراً لزيارتك معرض الفنون الرقمية! نتمنى لك تجربة ممتعة في استكشاف أعمالنا الفنية.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">شكراً</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toastTop" class="toast" role="alert">
+            <div class="toast-header bg-primary text-white">
+                <i class="fas fa-info-circle me-2"></i>
+                <strong class="me-auto">إشعار</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                هذا إشعار في الأعلى! تم تفعيله بنجاح.
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toastBottom" class="toast" role="alert">
+            <div class="toast-header bg-success text-white">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong class="me-auto">نجاح</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                هذا إشعار في الأسفل! تم تفعيله بنجاح.
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
